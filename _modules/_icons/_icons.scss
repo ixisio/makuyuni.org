@@ -1,0 +1,37 @@
+/**
+ * Component Icon
+ * Extends upon Google Material Icons
+ */
+@mixin icon-size($zoom-factor: 1, $size: 1.5rem) {
+    width: $size * $zoom-factor;
+    height: $size * $zoom-factor;
+}
+
+.icon {
+    display: inline-block;
+
+    // SVG Icons extends mdl-colors variables
+    fill: currentColor;
+
+    @include icon-size(1);
+}
+
+.icon--extra-large {
+    @include icon-size(4);
+}
+
+.icon--large {
+    @include icon-size(1 + 2/3);
+}
+
+.icon--small {
+    @include icon-size(2/3);
+}
+
+.icon--micro {
+    @include icon-size(1/2);
+}
+
+.icon--inline {
+    margin-right: 0.25rem;
+}

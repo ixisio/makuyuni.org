@@ -1,0 +1,39 @@
+/**
+ * Lists
+ */
+.list {
+    box-sizing: border-box;
+    padding-left: 2.5rem;
+}
+
+%list--unstyled,
+.list--unstyled {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding-bottom: 0.75rem;
+    }
+}
+
+.list--inline {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.list--inconized {
+    @extend %list--unstyled;
+
+    .icon {
+        position: absolute;
+    }
+
+    li > [class*="typography--"] {
+        display: inline-block;
+        padding-left: 1.5rem;
+    }
+}

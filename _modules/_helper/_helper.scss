@@ -1,0 +1,35 @@
+
+/**
+ * Return the hex value of a given color
+ *
+ * @param  {String} $color Name of the color to return
+ * @return {String}        Hex value of the color
+ */
+@function get-color($color) {
+    @return map-get(map-get($colors, $color), hex);
+}
+
+/**
+ * Return the type of a given color
+ *
+ * @param  {String} $color Name of the color to return
+ * @return {String}        Type (dark/light) of the color
+ */
+@function get-color-type ($color) {
+    @return map-get(map-get($colors, $color), type);
+}
+
+/**
+ * Simplest cleafix
+ * @void
+ */
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

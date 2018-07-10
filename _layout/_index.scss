@@ -1,0 +1,131 @@
+// Use border-box sizing for every element and pseudo-element
+// on the page.
+*,
+*:after,
+*:before  {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/**
+ * max-width all elements
+ * block elements.
+ */
+h1, h2, h3,
+p,
+blockquote,
+figure,
+ol, ul,
+pre, code,
+figure, figcaption,
+hr,
+address,
+.layout__section > section {
+    max-width: $layout--max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-maxwidth {
+    max-width: none;
+}
+
+.layout__section--large-maxwidth {
+    max-width: $layout--max-width--large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.layout__section {
+    @include clearfix;
+
+    position: relative;
+
+    @include hill-device-max('medium') {
+        padding: 3rem 2rem;
+    }
+
+    @include hill-device-min('medium') {
+        padding: 3rem 3rem;
+    }
+}
+
+.layout__space-top {
+    padding-top: 3rem;
+}
+
+.layout__space-bottom {
+    padding-bottom: 3rem;
+}
+
+.layout__nospace-top {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.layout__nospace-bottom {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.layout__text-wrapper {
+    @include hill-device-max('medium') {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include hill-device-min('medium') {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+.layout__section__headline {
+    margin-top: 0;
+}
+
+.layout__box {
+    padding: 2rem;
+}
+
+.layout__section__scroll-button {
+    display: none;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    width: 2.25rem;
+    margin-left: -1.125rem;
+
+    opacity: 0.4;
+    transition: transform .4s, opacity .4s;
+
+    &:hover {
+        opacity: 0.75;
+        transform: translate3d(0, 5px, 0);
+    }
+
+    @include hill-device-min('medium') {
+        display: block;
+    }
+}
+
+.layout__header {
+    width: 100%;
+    position: relative;
+}
+
+.layout__header__image {
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.layout__logo {
+    width: 6rem;
+    display: block;
+    z-index: 1;
+}
+

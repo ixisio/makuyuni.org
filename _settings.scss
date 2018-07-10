@@ -1,0 +1,100 @@
+/**
+ * Typefaces & Sizes
+ */
+$type--root-font-size:          18px;
+$type--root-font-size--small:   16px;
+$type--root-font-size--large:   $type--root-font-size * 1.25;
+$type--root-line-height:        1.6;
+
+$type--body: (
+    font-family: ('Roboto', sans-serif),
+    regular: 100,
+    bold: 700
+);
+
+$type--heading: (
+    font-family: ('Roboto', sans-serif),
+    regular: 400,
+    bold: 700
+);
+
+/**
+ * Layout + Hillcss Configuration
+ */
+$layout--max-width:             660px;
+$layout--max-width--large:      1180px;
+
+$hill-layout-responsive-css-output: true;
+$hill-text-helper-css-output:       true;
+$hill-layout-space:                 1rem;
+$hill-layout-space-multiplier:      3;
+$hill-text-root:                    $type--root-font-size;
+$hill-layout-boxes: (
+    '1/5',
+    '1/4',
+    '1/3',
+    '2/5',
+    '1/2',
+    '3/5',
+    '2/3',
+    '3/4',
+    '4/5',
+    '1/1'
+);
+$hill-layout-breakpoints: (
+    extra-small:    320px,
+    small:          480px,
+    medium:         768px,
+    large:          992px
+);
+
+
+/**
+ * Colors
+ */
+$colors: (
+    green: (
+        hex: #32806b,
+        type: 'dark'
+    ),
+    green-light:  (
+        hex: #54b69b,
+        type: 'dark'
+    ),
+    blue: (
+        hex: #147a90,
+        type: 'dark'
+    ),
+    red: (
+        hex: #fd5365,
+        type: 'dark'
+    ),
+    yellow: (
+        hex: #ffde00,
+        type: 'light'
+    ),
+    orange: (
+        hex: #ff6c61,
+        type: 'dark'
+    ),
+    grey: (
+        hex: #aaa,
+        type: 'dark'
+    ),
+    grey-light: (
+        hex: #c3c3c3,
+        type: 'light'
+    ),
+    grey-dark: (
+        hex: #373737,
+        type: 'dark'
+    ),
+    black: (
+        hex: #303030,
+        type: 'dark'
+    ),
+    white: (
+        hex: #fff,
+        type: 'light'
+    )
+);

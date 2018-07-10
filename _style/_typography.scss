@@ -1,0 +1,152 @@
+/**
+ * Body Font
+ */
+html {
+    font-size: $type--root-font-size;
+    color: get-color(grey-dark);
+    font-family: map-get($type--body, font-family);
+    font-weight: map-get($type--body, regular);
+
+    @include hill-device-max('medium') {
+        font-size: $type--root-font-size--small;
+    }
+}
+
+/**
+ * Paragraphs
+ */
+p {
+    line-height: $type--root-line-height;
+    margin-bottom: 1rem;
+}
+
+[class*="typography--"] {
+    font-weight: map-get($type--body, regular);
+    color: get-color(black);
+
+    @include hill-device-max('small') {
+        word-wrap: break-word;
+    }
+}
+
+/**
+ * Headlines
+ */
+
+// Overwrite User-Agent Styles
+h1,
+h2,
+h3 {
+   font-weight: map-get($type--body, regular);
+}
+
+.article h1,
+.typography--type-1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: map-get($type--heading, font-family);
+
+    @include hill-device-max('small') {
+        font-size: 2rem;
+    }
+}
+
+.article h2,
+.typography--type-2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    font-family: map-get($type--heading, font-family);
+
+    @include hill-device-max('small') {
+        font-size: 1.75rem;
+        margin-top: 2rem;
+    }
+}
+
+.article h3,
+.typography--type-3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-family: map-get($type--heading, font-family);
+}
+
+/**
+ * Links
+ */
+ .article a,
+.typography--link {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    svg {
+        transition: transform .3s;
+    }
+}
+
+.typography--link--icon {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform .3s;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        transform: scale(1.05);
+    }
+}
+
+.typography--no-link {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+/**
+ * Other Elements
+ */
+hr {
+    border: none;
+    border-top: 1px solid get-color(grey-light);
+}
+
+/**
+ * Quotation
+ */
+.typography--blockquote {
+    font-size: 1.25rem;
+    font-family: map-get($type--heading, font-family);
+    padding: 1rem 0 1.5rem 0;
+    margin: 3.5rem 2rem 0 0;
+    border-top: 5px solid get-color(black);
+
+    @include hill-device-max('small') {
+        border: none;
+        margin-top: 1rem;
+    }
+
+    cite {
+        font-size: 1rem;
+    }
+}
+
+p q,
+cite {
+    font-style: italic;
+    font-weight: 100;
+}
+
+/**
+ * Address
+ */
+address {
+    font-style: normal;
+}

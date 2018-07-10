@@ -1,0 +1,42 @@
+/**
+ * Buttons
+ * (Dam, I hate button styling :)
+ */
+.button {
+    position: relative;
+    display: inline-block;
+
+    padding: .8em 1em .75em;
+    border-radius: 1px;
+    border: 0;
+
+    font-weight: bold;
+    letter-spacing: .15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+
+    transition: transform .3s;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+
+    &:active {
+        outline: 0;
+        background-image: none;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        transform: scale(1.05);
+    }
+
+    &[disabled],
+    &:disabled {
+        cursor: not-allowed;
+        color: get-color(white);
+        background-color: get-color(grey-light);
+        transform: none;
+    }
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('_layout/_head.html', { "title": "Styleguide" })
+</head>
+<body>
+    <header class="layout__section" iii-bgcolor="yellow">
+        <h1 class="typography--type-1 color--white">Styleguide</h1>
+        <p>.. of this Website!</p>
+    </header>
+
+    <main>
+        <section class="layout__section">
+            <header>
+
+                <section id="toc">
+                    <h2>Table of Contents</h2>
+                    <ul class="list">
+                        <li>
+                            <a class="typography--link" href="#color">Colors</a>
+                            <ol class="list">
+                                <li>
+                                    <a class="typography--link" href="#text-color">Text Colors</a>
+                                </li>
+                                <li>
+                                    <a class="typography--link" href="#bg-color">Background Colors</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a class="typography--link" href="#icons">Icons</a>
+                        </li>
+                        <li>
+                            <a class="typography--link" href="#typography">Typography</a>
+                            <ol class="list">
+                                <li>
+                                    <a class="typography--link" href="#headlines">Headlines</a>
+                                </li>
+                                <li>
+                                    <a class="typography--link" href="#paragraphs">Paragraphs</a>
+                                </li>
+                                <li>
+                                    <a class="typography--link" href="#other-text-elements">Other Text Elements</a>
+                                </li>
+                                <li>
+                                    <a class="typography--link" href="#lists">List Types</a>
+                                </li>
+                                <li>
+                                    <a class="typography--link" href="#code">Code Blocks</a>
+                                </li>
+                                <li>
+                                    <a class="typography--link" href="#buttons">Buttons</a>
+                                </li>
+                                <li>
+                                    <a class="typography--link" href="#quotation">Quotation</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a class="typography--link" href="#figures">Figures</a>
+                            <ol class="list">
+                                <li><a class="typography--link" href="#default-figures">Figure default</a></li>
+                                <li><a class="typography--link" href="#figures-with-caption">Figure w/ Caption</a></li>
+                                <li><a class="typography--link" href="#figures-full-width">Figure full-width</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </section>
+            </header>
+        </section>
+
+        <section class="layout__section">
+            <h2 id="colors" class="typography--type-1"><b>Colors</b></h2>
+
+            <section id="text-colors" hill-layout="row">
+
+                <div hill-layout="box-1/2">
+                    <h3 class="typography--type-3">1 - Text</h3>
+
+                    <p class="layout__box" iii-color="green">GREEN</p>
+                    <p class="layout__box" iii-color="green-light">GREEN-LIGHT</p>
+                    <p class="layout__box" iii-color="blue">BLUE</p>
+                    <p class="layout__box" iii-color="red">RED</p>
+                    <p class="layout__box" iii-color="orange">ORANGE</p>
+                    <p class="layout__box" iii-color="grey">GREY</p>
+                    <p class="layout__box" iii-color="grey-light">GREY-LIGHT</p>
+                    <p class="layout__box" iii-color="grey-dark">GREY-DARK</p>
+                    <p class="layout__box" iii-color="black">BLACK</p>
+                    <p class="layout__box" iii-color="white" iii-bgcolor="grey">WHITE</p>
+                </div>
+
+                <div hill-layout="box-1/2">
+                    <h3 class="typography--type-3">2 - Backgrounds</h3>
+
+                    <p class="layout__box" iii-bgcolor="green">GREEN</p>
+                    <p class="layout__box" iii-bgcolor="green-light">GREEN-LIGHT</p>
+                    <p class="layout__box" iii-bgcolor="blue">BLUE</p>
+                    <p class="layout__box" iii-bgcolor="red">RED</p>
+                    <p class="layout__box" iii-bgcolor="orange">ORANGE</p>
+                    <p class="layout__box" iii-bgcolor="grey">GREY</p>
+                    <p class="layout__box" iii-bgcolor="grey-light">GREY-LIGHT</p>
+                    <p class="layout__box" iii-bgcolor="grey-dark">GREY-DARK</p>
+                    <p class="layout__box" iii-bgcolor="black">BLACK</p>
+                    <p class="layout__box" iii-bgcolor="white" iii-bgcolor="grey">WHITE</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="layout__section">
+            <h2 id="icons" class="typography--type-1"><b>Icons</b></h2>
+
+            <section hill-layout="row">
+                <div hill-layout="box-1/2">
+                    <h3 class="typography--type-3">Iconset</h3>
+                    <ul class="list--unstyled">
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "account", "inline": "", "size": "", "attr": "" }) &mdash; Account</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "arrow-down", "inline": "", "size": "", "attr": "" }) &mdash; Arrow-Down</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "arrow-right", "inline": "", "size": "", "attr": "" }) &mdash; Arrow-Right</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "calendar", "inline": "", "size": "", "attr": "" }) &mdash; Calendar</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "close", "inline": "", "size": "", "attr": "" }) &mdash; Close</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "email", "inline": "", "size": "", "attr": "" }) &mdash; Email</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "github", "inline": "", "size": "", "attr": "" }) &mdash; Github</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "google-plus", "inline": "", "size": "", "attr": "" }) &mdash; Google+</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "info", "inline": "", "size": "", "attr": "" }) &mdash; Info</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "location", "inline": "", "size": "", "attr": "" }) &mdash; Location</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "quote", "inline": "", "size": "", "attr": "" }) &mdash; Quotation</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "twitter", "inline": "", "size": "", "attr": "" }) &mdash; Twitter</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "xing", "inline": "", "size": "", "attr": "" }) &mdash; Xing</li>
+                    </ul>
+                </div>
+                <div hill-layout="box-1/2">
+                    <h3 class="typography--type-3">Sizes</h3>
+
+                    <ul class="list--unstyled">
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "location", "inline": "", "size": "micro", "attr": "" }) &mdash; Micro</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "location", "inline": "", "size": "small", "attr": "" }) &mdash; Small</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "location", "inline": "", "size": "", "attr": "" }) &mdash; Default</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "location", "inline": "", "size": "large", "attr": "" }) &mdash; Large</li>
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "location", "inline": "", "size": "extra-large", "attr": "" }) &mdash; Extra Large</li>
+                    </ul>
+
+                    <h3 class="typography--type-3">Variants</h3>
+
+                    <ul class="list--unstyled">
+                        <li>@@include('_modules/_icons/_icons.html', { "name": "location", "inline": "true", "size": "", "attr": "" }) Inline (Adds right whitespace)</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section class="layout__section" iii-bgcolor="red">
+            <h2 id="typography" class="typography--type-1"><b>Typography</b></h2>
+            <section id="headlines">
+                <h3 class="typography--type-2">1 - Headline Types</h3>
+
+                <h1 class="typography--type-1">H1 Heading</h1>
+                <h2 class="typography--type-2">H2 Heading</h2>
+                <h3 class="typography--type-3">H3 Heading</h3>
+            </section>
+
+            <section id="paragraphs">
+                <h2 class="typography--type-2">2 - Paragraphs</h2>
+
+                <h3>Left aligned Paragraph</h3>
+                <p>Lorem ipsum dolor sit amet, <a href="#" class="typography--link">consectetur</a> adipisicing elit. Voluptatum cumque minus, error. Magni officiis eveniet sunt, reprehenderit aliquid quam quo laborum, est ea temporibus pariatur ullam dolore iusto totam asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, sit odio soluta aspernatur omnis error alias ipsa modi ducimus tempore necessitatibus eveniet velit iure, corporis distinctio dicta cum voluptatibus accusantium!</p>
+
+                <h3>Right aligned Paragraph</h3>
+                <p hill-text="right">Lorem ipsum dolor sit quo laborum, est ea temporibus pariatur ullam dolore iusto totam hal asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, sit odio soluta aspernatur omnis error alias ipsa modi ducimus tempore necessitatibus eveniet velit iure, corporis distinctio dicta cum voluptatibus accusantium!</p>
+                <p hill-text="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cumque minus, error. Magni officiis eveniet sunt, reprehenderit aliquid quam quo laborum, est ea temporibus pariatur ullam dolore iusto totam asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, sit odio soluta aspernatur omnis error alias ipsa modi ducimus tempore necessitatibus eveniet velit iure, corporis distinctio dicta cum voluptatibus accusantium!</p>
+
+                <h3>Centered aligned Paragraph</h3>
+                <p hill-text="center">Lorem ipsum dolor sit quo laborum, est ea temporibus pariatur ullam dolore iusto totam hal asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, sit odio soluta aspernatur omnis error alias ipsa modi ducimus tempore necessitatibus eveniet velit iure, corporis distinctio dicta cum voluptatibus accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cumque minus, error. Magni officiis eveniet sunt, reprehenderit aliquid quam quo laborum, est ea temporibus pariatur ullam dolore iusto totam asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, sit odio soluta aspernatur omnis error alias ipsa modi ducimus tempore necessitatibus eveniet velit iure, corporis distinctio dicta cum voluptatibus accusantium!</p>
+            </section>
+
+            <section id="other-text-elements">
+                <h2 class="typography--type-2">3 - Other Text Elements</h2>
+
+                <ul class="list">
+                    <li><strong>Bolded</strong></li>
+                    <li><em>Italicized</em></li>
+                    <li><a class="typography--link">Colored</a></li>
+                    <li><u>Underlined</u></li>
+                    <li><small>Small</small></li>
+                    <li><del>Strikethrough</del></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="layout__section">
+            <section id="lists">
+                <h2 class="typography--type-2">4 - List Types</h2>
+
+                <ul class="list">
+                  <li>Item</li>
+                  <li>
+                    Another Item w/ child elements
+
+                    <ul class="list">
+                      <li>Child Item</li>
+                      <li>Child Item</li>
+                    </ul>
+                  </li>
+                  <li>Item</li>
+                </ul>
+
+                <ol class="list">
+                  <li>Item 1</li>
+                  <li>
+                    Item 2
+                    <ul class="list">
+                      <li>Item 2.1</li>
+                      <li>Item 2.2</li>
+                    </ul>
+                  </li>
+                  <li>Item 3</li>
+                </ol>
+            </section>
+        </section>
+
+        <section class="layout__section" iii-bgcolor="blue">
+            <section id="code">
+                <h2 class="typography--type-2">5 - Code Blocks</h2>
+                <pre><code>
+        // A Method
+        var methodName = function (a) {
+        return 'foo bar';
+        };
+                </code></pre>
+            </section>
+        </section>
+
+        <section class="layout__section">
+            <section id="buttons">
+                <h2 class="typography--type-2">6 - Buttons</h2>
+
+                <p>
+                    <button class="button" type="submit" iii-bgcolor="red">Default Button</button>
+                </p>
+                <p>
+                    <a class="button" href="#" role="button" iii-bgcolor="blue">Link Button</a>
+                </p>
+
+                <p>
+                    <button class="button" type="submit" disabled="true">Disabled Button</button>
+                </p>
+            </section>
+        </section>
+
+        <section class="layout__section background--orange">
+            <section id="quotation">
+                <h2 class="typography--type-2">7 - Quotation</h2>
+
+                <blockquote class="typography--blockquote" hill-layout="box-2/5 device-extra-small-1/1 device-small-1/1 clear float-left">
+                    <p>A Blockquote - Lorem ipsum dolor sit quo laborum, est ea temporibus pariatur ullam dolore iusto totam hal asperiores.</p>
+
+                    <cite>Peter Fox - Stadtaffen</cite>
+                </blockquote>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cumque minus, error. Magni officiis eveniet sunt, reprehenderit aliquid quam quo laborum, est ea temporibus pariatur ullam dolore iusto totam asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, sit odio soluta aspernatur omnis error alias ipsa modi ducimus tempore necessitatibus eveniet velit iure, corporis distinctio dicta cum voluptatibus accusantium! consectetur adipisicing elit. Consectetur, sit odio soluta aspernatur omnis error alias ipsa modi ducimus tempore necessitatibus eveniet velit iure, corporis distinctio dicta cum voluptatibus accusantium!</p>
+
+                <p>An inline <q>quotation</q></p>
+            </section>
+        </section>
+
+        <section class="layout__section">
+            <h2 id="figures" class="typography--type-1"><b>Figures</b></h2>
+            <section id="default-figures">
+                <h3 class="typography--type-2">Figure default</h3>
+                <figure class="figure">
+                    <img  class="figure__image" src="/assets/images/articles/this-will-be-the-web_1024x768.png" alt="This will be the Web, Brad Frost">
+                </figure>
+            </section>
+
+            <section id="figures-with-caption">
+                <h3 class="typography--type-2">Figure w/ Caption</h3>
+                <figure class="figure">
+                    <img  class="figure__image" src="/assets/images/articles/this-will-be-the-web_1024x768.png" alt="This will be the Web, Brad Frost">
+
+                    <figcaption>
+                        "This will be the Web", <a href="https://twitter.com/brad_frost" class="typography--link">@brad_frost</a>
+                      </figcaption>
+                </figure>
+            </section>
+        </section>
+
+        <section id="figures-full-width">
+            <h3 class="typography--type-2">Figure full-width</h3>
+
+            <figure class="figure--full-width">
+                <img src="/assets/images/home/9776__1200x800.jpg"
+                     srcset="/assets/images/home/9776__2000x1333.jpg 2000w,
+                             /assets/images/home/9776__1200x800.jpg 1200w,
+                             /assets/images/home/9776__768x512.jpg 768w,
+                             /assets/images/home/9776__960x1211.jpg 767w,
+                             /assets/images/home/9776__480x606.jpg 480w">
+
+                <figcaption>
+                    "This will be the Web", <a href="https://twitter.com/brad_frost" class="typography--link">@brad_frost</a>
+                  </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    @@include('_layout/_footer.html')
+</body>
+</html>

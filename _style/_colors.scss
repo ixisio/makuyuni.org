@@ -1,0 +1,28 @@
+/**
+ * Create HTML Attributes to set color, background-color
+ * to each Element on the site.
+ */
+@each $color in $colors {
+    $color-name: nth($color, 1);
+    $color-hex: get-color($color-name);
+    $color-type: get-color-type($color-name);
+
+    [iii-color="#{$color-name}"] {
+        color: $color-hex;
+        fill: $color-hex;
+    };
+
+    [iii-bgcolor="#{$color-name}"] {
+        background-color: $color-hex;
+
+        &,
+        [class*="typography--"],
+        .article * {
+            @if $color-type == dark {
+                color: get-color(white);
+            } @else {
+                color: get-color(black);
+            }
+        }
+    };
+}

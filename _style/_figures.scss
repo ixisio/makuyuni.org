@@ -1,0 +1,30 @@
+/**
+ * Image Basic Styling
+ */
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/**
+ * Figures & Images
+ */
+[class*="figure"] {
+    figcaption {
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+    }
+}
+
+.figure--full-width {
+    max-width: none;
+    margin: 0;
+}
+
+.figure--rounded {
+    display: block;
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 250px;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "makuyuni.org",
+  "version": "0.1.0",
+  "author": "Andreas Klein",
+  "description": "Project website of makuyuni e.V. NGO - Education is the key to Happiniess",
+  "homepage": "http://makuyuni.org",
+  "main": "www/index.html",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ixisio/makuyuni.org.git"
+  },
+  "engines": {
+    "node": "9.7.1"
+  },
+  "scripts": {
+    "deploy": "node_modules/gulp/bin/gulp.js deploy",
+    "postinstall": "npm run deploy"
+  },
+  "dependencies": {
+    "fastclick": "^1.0.6",
+    "hillcss": "^1.0.0",
+    "jquery": "^2.1.4",
+    "node-normalize-scss": "^1.0.3",
+    "slick-carousel": "^1.5.8"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-browserify": "latest",
+    "gulp-cssmin": "latest",
+    "gulp-file-include": "^0.13.7",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-svg-sprite": "^1.2.13",
+    "gulp-uglify": "latest"
+  }
+}

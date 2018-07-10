@@ -1,0 +1,15 @@
+.layout__header__image {
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.layout__header__image-wrapper {
+    padding-top: (100% / 1.5);
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
