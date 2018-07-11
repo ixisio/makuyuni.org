@@ -22,6 +22,13 @@ img {
     margin: 0;
 }
 
+.figure--image-grid {
+    .figure {
+        margin: 0;
+        padding: 1% 0;
+    }
+}
+
 .figure--rounded {
     display: block;
     border-radius: 100%;

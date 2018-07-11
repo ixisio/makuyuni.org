@@ -12,22 +12,44 @@
     </header>
 
     <main>
-        <section id="section-intro">
-            <div class="layout__section">
-                <h1 class="typography--type-2" iii-color="grey">Hey! Wir sind Lalahe, Jan, Andy und noch viele mehr aus Köln. Mit Freude, Herz und Engangement wollen wir helfen in der Nähe der kleinen Stadt <span iii-color="black">Makuyuni</span>, Tansania eine Schule zu bauen! Das ist unser Traum!</h1>
+        <section id="section-intro" class="layout__section">
+            <h1 class="typography--type-2" iii-color="grey">Hey! Wir sind Lalahe, Jan, Andy und noch viele mehr aus Köln. Mit Freude, Herz und Engangement wollen wir helfen in der Nähe der kleinen Stadt <span iii-color="black">Makuyuni</span>, Tansania eine Schule zu bauen! Das ist unser Traum!</h1>
 
-                <p hill-layout="space-bottom-3x">
-                    10. July 2018 &mdash; Wir befinden uns in der Vereinsgründung! Eine Menge toller Menschen haben uns schon gefragt wie sie uns unterstützden können, jedoch müsst Ihr euch noch ein bisschen Gedulden bis der offizielle Teil erledigt ist.
-                    Schreibt uns jedoch gerne oder ruft an, es gibt nichts schöneres als Menschen die ein gemeinsammes Ziel verfolgen und Ideen teilen dieses zu erreichen.
-                </p>
-
-                <p hill-text="center">
-                    <a href="mailto:post@makuyuni.org?subject=Ich möchte mehr erfahren über Makuyuni" class="button" iii-bgcolor="orange">
-                        @@include('_modules/_icons/_icons.html', { "name": "email", "inline": true, "size": "small", "attr": "" })
-                        Schreib uns</a>
-                </p>
-            </div>
+            <p hill-text="center">
+                <a href="mailto:post@makuyuni.org?subject=Ich möchte mehr erfahren über Makuyuni" class="button" iii-bgcolor="orange">
+                    @@include('_modules/_icons/_icons.html', { "name": "email", "inline": true, "size": "small", "attr": "" })
+                    Schreib uns</a>
+            </p>
         </section>
+
+        <article>
+            <section class="layout__section">
+                <p>
+                    <b>11. July 2018</b> &mdash; Wir befinden uns gerade in der Vereinsgründung! Eine Vereinssatzung muss geschrieben werden und wir müssen die Werte des Vereins abstimmen. <br>Eine Menge toller Menschen haben uns schon gefragt wie sie uns unterstützen können, jedoch müsst Ihr euch noch ein bisschen gedulden bis der offizielle Teil erledigt ist.
+                    Schreibt uns jedoch gerne oder ruft an, es gibt nichts Schöneres als Menschen die ein gemeinsames Ziel verfolgen und Ideen teilen dieses zu erreichen.
+                </p>
+            </section>
+
+            <section hill-layout="row" class="layout__section--large-maxwidth figure--image-grid">
+                <div hill-layout="box-1/2 device-small-1/1">
+                    <figure class="figure">
+                        <img  class="figure__image" src="/assets/images/articles/11.07.2018/besprechung-mit-kristina-noko-design.jpg" alt="Wir besprechen das Design & Logo des Vereins mit Kristina von noko-design.de">
+                        <figcaption>
+                            Wir besprechen das Design & Logo des Vereins mit Kristina von <a href="http://noko-design.de" target="_blank" class="typography--link">NOKO Design</a>, die sich bereit erklärt hat uns zu helfen. Danke nochmal ❤️
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div hill-layout="box-1/2 device-small-1/1">
+                    <figure class="figure">
+                        <img  class="figure__image" src="/assets/images/articles/11.07.2018/inoffizielles-erstes-vereinstreffen.jpg" alt="Wir haben unser erstes inoffizielles Vereinstreffen und besprechen wie es weiter geht.">
+                        <figcaption>
+                            Auf dem Edelweißpiraten Festival in der Südstadt, haben wir unser erstes inoffizielles Vereinstreffen und besprechen wie es weiter geht. Wie sollen wir heißen? Wer bekleidet welches Amt?
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </article>
     </main>
 
     @@include('_layout/_footer.html')

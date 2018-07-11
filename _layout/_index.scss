@@ -33,6 +33,7 @@ address,
     max-width: none;
 }
 
+.layout__section > .layout__section--large-maxwidth,
 .layout__section--large-maxwidth {
     max-width: $layout--max-width--large;
     margin-left: auto;
