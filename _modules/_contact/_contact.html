@@ -1,0 +1,14 @@
+<section class="contact" hill-text="center">
+    <a href="mailto:post@makuyuni.org?subject=Ich möchte mehr erfahren über Makuyuni.org" class="typography--link--icon" hill-layout="space-right" iii-color="grey">
+        @@include('_modules/_icons/_icons.html', { "name": "email", "inline": true, "size": "small", "attr": "" })<span hill-layout="device-extra-small-0">Mail</span></a>
+
+
+    <form class="newsletter" action="https://tinyletter.com/makuyuni-org" target="_blank" method="post">
+        <input type="hidden" value="1" name="embed"/>
+        <input class="newsletter__email" type="text" name="email" id="tlemail" placeholder="E-Mail"/>
+
+        <a href="#" class="button newsletter__submit" iii-bgcolor="orange" data-newsletter-subscription>
+            @@include('_modules/_icons/_icons.html', { "name": "newsletter", "inline": true, "size": "small", "attr": "" })
+            <span class="newsletter__submit-text">Newsletter</span></a>
+    </form>
+</section>

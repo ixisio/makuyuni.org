@@ -16,23 +16,7 @@
         <section id="section-intro" class="layout__section">
             <h1 class="typography--type-2" iii-color="grey">Hey! Wir sind Lalahe, Jan, Andy und noch viele mehr aus Köln. Mit Freude, Herz und Engangement wollen wir helfen in der Nähe der kleinen Stadt <span iii-color="black">Makuyuni</span>, Tansania eine Schule zu bauen! Das ist unser Traum!</h1>
 
-            <p hill-text="center">
-                <a href="mailto:post@makuyuni.org?subject=Ich möchte mehr erfahren über Makuyuni" class="typography--link--icon" hill-layout="space-right" iii-color="grey">
-                    @@include('_modules/_icons/_icons.html', { "name": "email", "inline": true, "size": "small", "attr": "" })<span hill-layout="device-extra-small-0">E-Mail</span></a>
-
-                <a href="mailto:post@makuyuni.org?subject=Ich möchte mehr erfahren über Makuyuni" class="button" iii-bgcolor="orange">
-                    @@include('_modules/_icons/_icons.html', { "name": "newsletter", "inline": true, "size": "small", "attr": "" })
-                    Newsletter</a>
-
-
-                    <form class="" action="https://tinyletter.com/makuyuni-org" target="_blank" method="post">
-                        <p>
-                            <input type="text" name="email" id="tlemail" />
-                        </p>
-                        <input type="hidden" value="1" name="embed"/>
-                        <input class="button" iii-bgcolor="orange"type="submit" value="Schickt mir Updates"/>
-                    </form>
-            </p>
+            @@include('_modules/_contact/_contact.html')
         </section>
 
         <section class="layout__section">
@@ -68,11 +52,7 @@
 
         </section>
 
-        <p hill-text="center">
-            <a href="mailto:post@makuyuni.org?subject=Schickt mir regelmäßig updates" class="button" iii-bgcolor="orange">
-                @@include('_modules/_icons/_icons.html', { "name": "info", "inline": true, "size": "small", "attr": "" })
-                Schickt mir weitere Infos</a>
-        </p>
+        @@include('_modules/_contact/_contact.html')
     </main>
 
     @@include('_layout/_footer.html')
