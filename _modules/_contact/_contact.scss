@@ -1,3 +1,10 @@
+.contact__icon-section {
+    @include hill-device-max('small') {
+        display: block;
+        margin-bottom: $hill-layout-space;
+    }
+}
+
 .newsletter {
     position: relative;
     display: inline;
