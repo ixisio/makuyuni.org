@@ -1,3 +1,20 @@
+.donation__contactBoxes {
+    text-align: center;
+
+    @include hill-device-max('small') {
+        text-align: left;
+    }
+}
+
+.donation__contactBoxes__item {
+    @include hill-device-max('small') {
+        margin-bottom: $hill-layout-space;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .donation__paypal-button {
     outline: none;
     transition: transform .3s;
