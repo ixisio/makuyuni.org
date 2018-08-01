@@ -14,13 +14,13 @@
 
     <main>
         <section id="section-intro" class="layout__section">
-            <h1 class="typography--type-2" iii-color="grey">Hey! Wir sind Lalahe, Jan, Andy und noch viele mehr aus Köln. Mit Freude, Herz und Engangement wollen wir helfen in der Nähe der kleinen Stadt <span iii-color="black">Makuyuni</span>, Tansania eine Schule zu bauen! Das ist unser Traum!</h1>
+            <h2 class="typography--type-2" iii-color="grey">Hey! Wir sind Lalahe, Jan, Andy und noch viele mehr aus Köln. Mit Freude, Herz und Engangement wollen wir helfen in der Nähe der kleinen Stadt <span iii-color="black">Makuyuni</span>, Tansania eine Schule zu bauen! Das ist unser Traum!</h2>
 
             @@include('_modules/_contact/_contact.html')
         </section>
 
         <section class="layout__section">
-            <h2 class="typography--type-2">Aktuelles</h2>
+            <h2 class="typography--type-2 layout__section__headline">Aktuelles</h2>
 
             <article>
                 <p><b>13 Juli 2018</b> &mdash; Die Gründung der gemeinnützigen Organisation / NGO Makuyuni e.V. ist getan, wir sind nun offiziell ein Verein. Danke an alle Personen die sich bereit erklärt haben uns in diesem Vorhaben zu unterstützen, jetzt kann es endlich losgehen. Die <a href="/files/07.2018_vereinssatzung-makuyuni-org.pdf" target="_blank" class="typography--link">Vereinssatzung</a> könnt Ihr euch hier reinziehen.
@@ -52,7 +52,9 @@
 
         </section>
 
-        @@include('_modules/_contact/_contact.html')
+        <section class="layout__section">
+            @@include('_modules/_donation/_donation.html')
+        </section>
     </main>
 
     @@include('_layout/_footer.html')

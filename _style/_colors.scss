@@ -25,4 +25,8 @@
             }
         }
     };
+
+    [iii-bordercolor="#{$color-name}"] {
+        border-color: $color-hex;
+    };
 }

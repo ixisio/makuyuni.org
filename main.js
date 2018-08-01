@@ -16,7 +16,7 @@ $('[data-newsletter-subscription]').on('click', function (event) {
     } else {
         $form.addClass('is-active-newsletter-section');
         $button.find('.newsletter__submit-text')
-                .text('Abbonieren')
+                .text('Abonnieren')
         $email.focus();
     }
 });
