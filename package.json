@@ -20,7 +20,7 @@
   "dependencies": {
     "fastclick": "^1.0.6",
     "hillcss": "^1.0.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "node-normalize-scss": "^1.0.3",
     "slick-carousel": "^1.5.8"
   },
